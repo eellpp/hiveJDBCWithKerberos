@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>hiveJDBCWithKerberos</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+
+    <name>hiveserver2-jdbc</name>
+
+    <dependencies>
+        <dependency>
+            <artifactId>log4j</artifactId>
+            <groupId>log4j</groupId>
+            <version>1.2.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-jdbc</artifactId>
+            <version>1.1.0-cdh5.12.1</version>
+        </dependency>
+        <dependency>
+            <artifactId>hadoop-core</artifactId>
+            <groupId>org.apache.hadoop</groupId>
+            <version>2.6.0-mr1-cdh5.12.1</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>hadoop-client</artifactId>
+            <groupId>org.apache.hadoop</groupId>
+            <version>2.6.0-mr1-cdh5.12.1</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>cdh.repo</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+            <name>Cloudera Repositories</name>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
